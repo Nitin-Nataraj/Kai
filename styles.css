@@ -1,0 +1,253 @@
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #F6F6F6;
+  background-color: #D9CAB3;
+}
+
+.header{
+  background-color: #212121;
+  border-top: 0.1rem solid #F6F6F6; border-bottom: 0.2rem solid #F6F6F6;
+}
+
+section.header>h1{
+  margin: 0px auto 1em;
+  padding: 1em 0 0.25em 0;
+  font-family: 'Dancing Script',cursive;
+  font-size: 2.75rem;
+}
+
+a{
+  color: #F6F6F6;
+  text-align: justify;
+  text-decoration: none;
+  display: inline;
+}
+
+a:hover{
+  color: #212121;
+  text-decoration: underline solid #212121;
+  text-underline-offset: 0.5rem;
+}
+
+.navbar{
+  background-color: #6D9886;
+  margin: 1em auto 1em;
+  padding: 1em 0 0.5em 0.5em;
+  border-top: 0.2rem solid #F6F6F6; border-bottom: 0.2rem solid #F6F6F6;
+}
+
+
+.navlink{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  padding-right: 1.5em;
+}
+
+.footer{
+  background-color: #212121;
+}
+
+
+
+
+
+#menuToggle
+{
+display: block;
+position: absolute;
+top: 60px;
+left: 25px;
+
+z-index: 1;
+
+-webkit-user-select: none;
+user-select: none;
+}
+
+#menuToggle a
+{
+color: #F6F6F6;
+
+transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+color: #D9CAB3;
+}
+
+
+#menuToggle input
+{
+display: block;
+width: 40px;
+height: 32px;
+position: absolute;
+top: -7px;
+left: -5px;
+
+cursor: pointer;
+
+opacity: 0; /* hide this */
+z-index: 2; /* and place it over the hamburger */
+
+-webkit-touch-callout: none;
+}
+
+/*
+* Just a quick hamburger
+*/
+#menuToggle span
+{
+display: block;
+width: 33px;
+height: 4px;
+margin-bottom: 5px;
+position: relative;
+
+background: #F6F6F6;
+border-radius: 3px;
+
+z-index: 1;
+
+transform-origin: 4px 0px;
+
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+transform-origin: 0% 100%;
+}
+
+/* 
+* Transform all the slices of hamburger
+* into a crossmark.
+*/
+#menuToggle input:checked ~ span
+{
+opacity: 1;
+transform: rotate(45deg) translate(-2px, -1px);
+background: #000000;
+}
+
+/*
+* But let's hide the middle one.
+*/
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+opacity: 0;
+transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+* Ohyeah and the last one should go the other direction
+*/
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+#menu
+{
+position: absolute;
+width: max-content;
+margin: -100px 0 0 -50px;
+padding: 50px;
+padding-top: 125px;
+
+background: #6D9886;
+list-style-type: none;
+-webkit-font-smoothing: antialiased;
+/* to stop flickering of text in safari */
+
+transform-origin: 0% 0%;
+transform: translate(-100%, 0);
+
+transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+padding: 10px 0;
+font-size: 22px;
+}
+
+/*
+* And let's slide it in from the left
+*/
+#menuToggle input:checked ~ ul
+{
+transform: none;
+}
+
+@media screen and (min-width: 1000px) {
+    #menuToggle{
+      display: none;
+    }  
+
+    .header>h1{
+      margin-bottom: 0px !important;
+      padding-bottom: 2rem !important;
+    }
+
+    .header{
+      border-bottom: 0px;
+    }
+
+    #nav-desktop{
+      padding-top: 0.75em;
+      padding-bottom: 0.75em;
+      border-bottom: solid 5px #6D9886;
+      background-color: #F6F6F6;
+      color: #212121;
+      height: max-content;
+    }
+
+    #nav-desktop>a{
+      color: #212121;
+      padding-right: 0.75em;
+    }
+
+}
+
+@media screen and (min-width: 1100px){
+  #nav-desktop>a{
+    color: #212121;
+    padding-right: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  #nav-desktop>a{
+    color: #212121;
+    padding-right: 2em;
+  }
+}
+
+
+@media screen and (max-width:1000px){
+    #menuToggle{
+      display: block;
+    }  
+
+    #nav-desktop{
+      display: none;
+    }
+}
+
+
+
