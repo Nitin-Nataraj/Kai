@@ -1,7 +1,3 @@
-#world-map{
-  position: relative;
-}
-
 h3{
     color: #212121;
     font-family: 'Roboto', sans-serif;
@@ -40,11 +36,6 @@ img+a:hover{
     background-color: #6D9886;
 }   
 
-.map{
-    width: 75em;
-    margin: 2em 0 0.5em 0;
-    position: relative;
-  }
 
 #Sicily{
   position: absolute;
@@ -85,6 +76,7 @@ p{
   width: 25%;
 }
 
+
 @media screen and (min-width: 750px) {
   .map{
     width: 45em;
@@ -106,7 +98,7 @@ p{
 
 @media screen and (min-width:1250px){
   .map{
-    width: 60em;
+    transform: scale(0.8);
   }
 }
 
@@ -117,7 +109,7 @@ p{
   }
 
   .map{
-    width: 25em;
+    width: 27em;
   }
 }
 
