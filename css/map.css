@@ -50,6 +50,11 @@
     box-sizing: border-box;
     margin: 0 auto;
   }
+
+  .distribution-map p{
+    text-align: center;
+  }
+
   .distribution-map > img {
     width: 100%;
     position: relative;

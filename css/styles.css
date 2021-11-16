@@ -1,11 +1,13 @@
 html{scroll-behavior:smooth}
 
+
 body{
   margin: 0;
   padding: 0;
   text-align: center;
   color: #F6F6F6;
   background-color: #D9CAB3;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header{
