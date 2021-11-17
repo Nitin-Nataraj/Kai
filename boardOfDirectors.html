@@ -12,6 +12,8 @@
 </head>
 
 <body>
+    <i id="top"></i>
+
     <a href="index.html">
         <section class="header">
             <h1>Kai</h1>
@@ -42,9 +44,11 @@
                 <a href="#">
                     <li>Media</li>
                 </a>
-                <a href="#">
-                    <li id="yellow-text">About Us</li>
-                </a>
+                <select name="about" onchange="location = this.value;">
+                    <option style="display:none" selected="selected" class="navlink" value="about">About Us</option>
+                    <option class="navlink bold gold" value="boardOfDirectors.html">Board of Directors</option>
+                    <option class="navlink" value="contactUs.html">Contact Us</option>
+                </select>
             </ul>
         </div>
 
@@ -53,7 +57,11 @@
             <a class="navlink">The Experience</a>
             <a class="navlink">Membership</a>
             <a class="navlink">Media</a>
-            <a class="navlink bold">About Us</a>
+            <select name="about" class="bold" onchange="location = this.value;" style="width: fit-content">
+                <option style="display:none" class="navlink" value="about">About Us</option>
+                <option class="navlink bold" selected="selected" value="boardOfDirectors.html" >Board of Directors</option>
+                <option class="navlink" value="contactUs.html">Contact Us</option>
+            </select>
         </div>
     </nav>
 
@@ -126,6 +134,7 @@
     </section>
 
     <section class="footer">
+        <a href="#top">Scroll to Top</a>
     </section>
 
 

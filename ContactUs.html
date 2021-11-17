@@ -10,11 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <title>Kai</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/ContactUs.css">
+    <link rel="stylesheet" href="css/contactUs.css">
 </head>
 
 <body>
-
+    <i id="top"></i>
 
     <a href="index.html">
         <section class="header">
@@ -46,9 +46,11 @@
                 <a href="#">
                     <li>Media</li>
                 </a>
-                <a href="#">
-                    <li>About Us</li>
-                </a>
+                <select name="about" onchange="location = this.value;">
+                    <option style="display:none" selected="selected" class="navlink" value="about">About Us</option>
+                    <option class="navlink" value="boardOfDirectors.html">Board of Directors</option>
+                    <option class="navlink bold gold" value="contactUs.html">Contact Us</option>
+                </select>
             </ul>
         </div>
 
@@ -57,19 +59,23 @@
             <a class="navlink">The Experience</a>
             <a class="navlink">Membership</a>
             <a class="navlink">Media</a>
-            <a class="navlink">About Us</a>
+            <select name="about" class="bold" onchange="location = this.value;" style="width: 7em">
+                <option style="display:none" class="navlink" value="about">About Us</option>
+                <option class="navlink" value="boardOfDirectors.html">Board of Directors</option>
+                <option class="navlink bold" selected="selected" value="contactUs.html">Contact Us</option>
+            </select>
         </div>
     </nav>
 
     <section class="body">
         <h1 class="heading">
-            <bold>Contact Us</bold>
+            Contact Us
         </h1>
 
         <div class="row">
             <div class="column">
                 <p>Col1</p>
-                <img src="images\Contact Us Temp.PNG" alt="MSD" style="width:120px;height:120px;">
+                <img src="images\phone.png" alt="MSD">
                 <p>Phone:</p>
                 <p>Europe</p>
                 <p>+91 9876543210</p>
@@ -78,7 +84,7 @@
             </div>
             <div class="column">
                 <p>Col2</p>
-                <img src="images\Contact Us Temp.PNG" alt="MSD" style="width:120px;height:120px;">
+                <img src="images\phone.png" alt="MSD">
                 <p>Live Chat</p>
                 <p>Talk to our customer service team and
                     <br>get your doubts cleared.</p>
@@ -86,12 +92,12 @@
             </div>
             <div class="column">
                 <p>Col3</p>
-                <img src="images\Contact Us Temp.PNG" alt="MSD" style="width:120px;height:120px;">
+                <img src="images\phone.png" alt="MSD">
                 <p>Idk what to fill here</p>
                 <p>Enjoy your stay!</p>
             </div>
         </div>
-
+        <hr>
         <h1 class="heading">Any Queries?</h1>
         <p>We are here to help you out</p>
         <form class="form">
@@ -106,16 +112,20 @@
             <br>
 
         </form>
+        <hr>
 
-        <h1 class="heading">Company Headquarters</h1>
-        <img src="images\Location.PNG" alt="MSD" style="width:120px;height:120px;">
-        <p style="color: black; padding-bottom:50px; font-size:24px;">
-            Address: Mahindra World City, Just outside Chennai
-        </p>
+        <div class="company">
+            <div class="column">
+                <h1 class="logo">Kai</h1>
+                <p>Address: Mahindra World City, Just outside Chennai</p>
+            </div>            
+        </div>
+        
 
     </section>
 
     <section class="footer">
+        <a href="#top">Scroll to Top</a>
     </section>
 
 

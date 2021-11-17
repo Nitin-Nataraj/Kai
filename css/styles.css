@@ -1,5 +1,8 @@
 html{scroll-behavior:smooth}
 
+.bold{
+  font-weight: bold;
+}
 
 body{
   margin: 0;
@@ -57,6 +60,19 @@ a>section.header>h1:hover{
   border-top: 0.2rem solid #F6F6F6; border-bottom: 0.2rem solid #F6F6F6;
 }
 
+select{
+  outline: 0;
+  border: 0;
+  background-color: #F6F6F6;
+  width: 6em;
+  word-wrap: break-word;
+  font-size: 1.2rem;
+}
+
+option{
+  color: #212121;
+  padding: 0.5em 0.5em;
+}
 
 .navlink{
   font-family: 'Roboto', sans-serif;
@@ -65,7 +81,14 @@ a>section.header>h1:hover{
 }
 
 .footer{
+  color: #F6F6F6;
   background-color: #212121;
+  height: 150px;
+  border-bottom: #F6F6F6 solid 0.1em; border-top: #6D9886 solid 0.2em;
+}
+
+.footer a:hover{
+  color: #D9CAB3;
 }
 
 #menuToggle
@@ -201,6 +224,29 @@ padding: 10px 0;
 font-size: 22px;
 }
 
+#menu .gold{
+  color: #D9CAB3;
+}
+
+
+#menu select{
+  color: #F6F6F6;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  margin-top: 0.5em;
+  width: 6em;
+  word-wrap: break-word;
+  font-size: 1.4rem;
+  transform: translateX(-8%);
+}
+
+#menu option{
+  color: #F6F6F6;
+  background-color: #6D9886;
+  padding: 0.5em 0.5em;
+}
+
 /*
 * And let's slide it in from the left
 */
@@ -231,8 +277,6 @@ hr{
   border-width: 0.5em;
   width:30%;
 }
-
-
 
 
 /*Responsiveness*/

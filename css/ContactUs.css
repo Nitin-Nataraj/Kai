@@ -1,3 +1,41 @@
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+hr{
+    border-top: 0.25em dashed #6D9886;
+    margin-top: 1em;
+    border-radius: 0%;
+}
+
+.company{
+    display: flex;
+    padding-top: 1em;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.company p{
+    color: black; 
+    padding-bottom:2.5em !important; 
+    font-size:1em;
+}
+
+.logo{
+    margin: 0px auto 1em;
+    padding: 0.5em 0 0.25em 0;
+    font-family: 'Dancing Script',cursive;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.img{
+    width:120px;
+    height:120px;
+}
+
 .column {
     float: left;
     width: 33.33%;
@@ -10,8 +48,12 @@
     clear: both;
 }
 
+.heading{
+    margin-top: 1.5em;
+}
+
 .row {
-    padding-top: 20px;
+    padding-top: 1em;
 }
 
 .heading {
@@ -19,12 +61,17 @@
     font-size: 30px;
 }
 
-.footer {
-    padding-bottom: 100px;
-}
-
 .form {
     color: black;
     font-size: 20px;
     text-align: center;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .column{
+        width:100%;
+        padding-bottom: 2em;
+    }
 }

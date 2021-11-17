@@ -14,7 +14,7 @@
     
 </head>
 <body>
-    
+    <i id="top"></i>  
   
   <a href="index.html">
     <section class="header">
@@ -38,7 +38,11 @@
               <a href="#"><li>The Experience</li></a>
               <a href="#"><li>Membership</li></a>
               <a href="#"><li>Media</li></a>
-              <a href="boardOfDirectors.html"><li>About Us</li></a>
+              <select name="about" onchange="location = this.value;">
+                <option style="display:none" selected="selected" class="navlink" value="about">About Us</option>
+                <option class="navlink bold gold" value="boardOfDirectors.html">Board of Directors</option>
+                <option class="navlink" value="contactUs.html">Contact Us</option>
+            </select>
             </ul>
           </div>
   
@@ -47,221 +51,434 @@
               <a class="navlink">The Experience</a>
               <a class="navlink">Membership</a>
               <a class="navlink">Media</a>
-              <a class="navlink" href="boardOfDirectors.html">About Us</a>
+              <select name="about" onchange="location = this.value;">
+                <option style="display:none" selected="selected" class="navlink" value="about">About Us</option>
+                <option class="navlink" value="boardOfDirectors.html">Board of Directors</option>
+                <option class="navlink" value="contactUs.html">Contact Us</option>
+              </select>
           </div>
         </nav>
 
     <section id="body">
   
       
-      <div class="Map">
-        <div class="ScriptTop">
-            <div class="rt-container">
-                <div class="col-rt-4" id="float-right">
-        
-                    <!-- AD HERE -->
-                    
-                </div>
-            </div>
-        </div>
-        
+      <div class="Map">        
         <section>
-            <div class="rt-container">
-                  <div class="col-rt-12">
-                      <div class="Scriptcontent">
-                      
-                    <!-- partial:index.partial.html -->
-        <div class="distribution-map">
-            <img src="images/map/map.png" alt="" />
-           
-            <button class="map-point" style="top:82.5%;left:52%">
-                <div class="content">
-                    <div class="centered-y">
-                        <h2>Cape Town, South Africa</h2>
-                        <a href="#South-Africa-Heading"><p>Read More.....</p></a>
+            <div class="distribution-map">
+                <img src="images/map/map.png" alt="" style="height:inherit"/>
+                <button class="map-point" style="top:82.5%;left:52%">
+                    <div class="content">
+                        <div>
+                            <h2>Cape Town, South Africa</h2>
+                            <a href="#South-Africa-Heading"><p>Read More.....</p></a>
+                        </div>
                     </div>
-                </div>
-            </button>
-            <button class="map-point" style="top:48%;left:55%">
-              <div class="content">
-                  <div class="centered-y">
-                      <h2>Cairo, Egypt</h2>
-                      <a href="#Egypt-Heading"><p>Read More.....</p></a>
-                  </div>
-              </div>
-          </button>
-            <button class="map-point" style="top:41%;left:51%">
-                <div class="content">
-                    <div class="centered-y">
-                        <h2>Sicily, Italy</h2>
-                        <a href="#Sicily-Heading"><p>Read More.....</p></a>
+                </button>
+                <button class="map-point" style="top:48%;left:55%">
+                    <div class="content">
+                        <div>
+                            <h2>Cairo, Egypt</h2>
+                            <a href="#Egypt-Heading"><p>Read More.....</p></a>
+                        </div>
                     </div>
-                </div>
-            </button>
-            <button class="map-point" style="top:82%;left:88%">
-                <div class="content">
-                    <div class="centered-y">
-                        <h2>Sydney, Australia</h2>
-                        <a href="#Sydney-Heading"><p>Read More.....</p></a>
+                </button>
+                <button class="map-point" style="top:41%;left:51%">
+                    <div class="content">
+                        <div>
+                            <h2>Sicily, Italy</h2>
+                            <a href="#Sicily-Heading"><p>Read More.....</p></a>
+                        </div>
                     </div>
-                </div>
-            </button>
-            <button class="map-point" style="top:87%;left:94.5%">
-              <div class="content">
-                  <div class="centered-y">
-                      <h2>Wellington, New Zealand</h2>
-                      <a href="#New-Zealand-Heading"><p>Read More.....</p></a>
-                  </div>
-              </div>
-          </button>
-            <button class="map-point" style="top:55%;left:67%">
-                <div class="content">
-                    <div class="centered-y">
-                        <h2>Mumbai, India</h2>
-                        <a href="#Mumbai-Heading"><p>Read More.....</p></a>
+                </button>
+                <button class="map-point" style="top:82%;left:88%">
+                    <div class="content">
+                        <div>
+                            <h2>Sydney, Australia</h2>
+                            <a href="#Sydney-Heading"><p>Read More.....</p></a>
+                        </div>
                     </div>
-                </div>
-            </button>
-            <button class="map-point" style="top:33%;left:48.5%">
-                <div class="content">
-                    <div class="centered-y">
-                        <h2>Amsterdam, Netherlands</h2>
-                        <a href="#Amsterdam-Heading"><p>Read More.....</p></a>
+                </button>
+                <button class="map-point" style="top:87%;left:94.5%">
+                    <div class="content">
+                        <div>
+                            <h2>Wellington, New Zealand</h2>
+                            <a href="#New-Zealand-Heading"><p>Read More.....</p></a>
+                        </div>
                     </div>
-                </div>
-            </button>
-            <button class="map-point" style="top:33%;left:51%">
-              <div class="content">
-                  <div class="centered-y">
-                      <h2>Berlin, Germany</h2>
-                      <a href="#Berlin-Heading"><p>Read More.....</p></a>
-                  </div>
-              </div>
-          </button>
-          <button class="map-point" style="top:37%;left:47%">
-            <div class="content">
-                <div class="centered-y">
-                    <h2>Paris, France</h2>
-                    <a href="#Paris-Heading"><p>Read More.....</p></a>
-                </div>
-            </div>
-          </button>
-          <button class="map-point" style="top:63%;left:65.5%">
-            <div class="content">
-                <div class="centered-y">
-                    <h2>Male Atoll, Maldives</h2>
-                    <a href="#Maldives-Heading"><p>Read More.....</p></a>
-                </div>
-            </div>
-          </button>
-          <button class="map-point" style="top:48%;left:68.5%">
-            <div class="content">
-                <div class="centered-y">
-                    <h2>Shimla, India</h2>
-                    <a href="#Shimla-Heading"><p>Read More.....</p></a>
-                </div>
-            </div>
-          </button>
-          <button class="map-point" style="top:62.75%;left:75%">
-            <div class="content">
-                <div class="centered-y">
-                    <h2>Singapore</h2>
-                    <a href="#Singapore-Heading"><p>Read More.....</p></a>
-                </div>
-            </div>
-          </button>
-          <button class="map-point" style="top:67.5%;left:77.5%">
-            <div class="content">
-                <div class="centered-y">
-                    <h2>Bali, Indonesia</h2>
-                    <a href="#Indonesia-Heading"><p>Read More.....</p></a>
-                </div>
-            </div>
-          </button>
-          <button class="map-point" style="top:43.5%;left:14.5%">
-            <div class="content">
-                <div class="centered-y">
-                    <h2>Los Angeles, CA, United States</h2>
-                    <a href="#Los-Angeles-Heading"><p>Read More.....</p></a>
-                </div>
-            </div>
-          </button>
-          <button class="map-point" style="top:51.5%;left:4.5%">
-            <div class="content">
-                <div class="centered-y">
-                    <h2>Honolulu, Hawaii, United States</h2>
-                    <a href="#Hawaii-Heading"><p>Read More.....</p></a>
-                </div>
-            </div>
-          </button>
-          <button class="map-point" style="top:64.75%;left:22.25%">
-            <div class="content">
-                <div class="centered-y">
-                    <h2>Port of Spain, Trinidad & Tobago</h2>
-                    <a href="#Trinidad-Heading"><p>Read More.....</p></a>
-                </div>
-            </div>
-          </button>
-        </div>
-        
-        <!-- partial -->
-                   
+                </button>
+                <button class="map-point" style="top:55%;left:67%">
+                    <div class="content">
+                        <div>
+                            <h2>Mumbai, India</h2>
+                            <a href="#Mumbai-Heading"><p>Read More.....</p></a>
+                        </div>
                     </div>
-                </div>
+                </button>
+                <button class="map-point" style="top:33%;left:48.5%">
+                    <div class="content">
+                        <div>
+                            <h2>Amsterdam, Netherlands</h2>
+                            <a href="#Amsterdam-Heading"><p>Read More.....</p></a>
+                        </div>
+                    </div>
+                </button>
+                <button class="map-point" style="top:33%;left:51%">
+                    <div class="content">
+                        <div>
+                            <h2>Berlin, Germany</h2>
+                            <a href="#Berlin-Heading"><p>Read More.....</p></a>
+                        </div>
+                    </div>
+                </button>
+                <button class="map-point" style="top:37%;left:47%">
+                    <div class="content">
+                        <div>
+                            <h2>Paris, France</h2>
+                            <a href="#Paris-Heading"><p>Read More.....</p></a>
+                        </div>
+                    </div>
+                </button>
+                <button class="map-point" style="top:63%;left:65.5%">
+                    <div class="content">
+                        <div>
+                            <h2>Male Atoll, Maldives</h2>
+                            <a href="#Maldives-Heading"><p>Read More.....</p></a>
+                        </div>
+                    </div>
+                </button>
+                <button class="map-point" style="top:48%;left:68.5%">
+                    <div class="content">
+                        <div>
+                            <h2>Shimla, India</h2>
+                            <a href="#Shimla-Heading"><p>Read More.....</p></a>
+                        </div>
+                    </div>
+                </button>
+                <button class="map-point" style="top:62.75%;left:75%">
+                    <div class="content">
+                        <div>
+                            <h2>Singapore</h2>
+                            <a href="#Singapore-Heading"><p>Read More.....</p></a>
+                        </div>
+                    </div>
+                </button>
+                <button class="map-point" style="top:67.5%;left:77.5%">
+                    <div class="content">
+                        <div>
+                            <h2>Bali, Indonesia</h2>
+                            <a href="#Indonesia-Heading"><p>Read More.....</p></a>
+                        </div>
+                    </div>
+                </button>
+                <button class="map-point" style="top:43.5%;left:14.5%">
+                    <div class="content">
+                        <div>
+                            <h2>Los Angeles, CA, United States</h2>
+                            <a href="#Los-Angeles-Heading"><p>Read More.....</p></a>
+                        </div>
+                    </div>
+                </button>
+                <button class="map-point" style="top:51.5%;left:4.5%">
+                    <div class="content">
+                        <div>
+                            <h2>Honolulu, Hawaii, United States</h2>
+                            <a href="#Hawaii-Heading"><p>Read More.....</p></a>
+                        </div>
+                    </div>
+                </button>
+                <button class="map-point" style="top:64.75%;left:22.25%">
+                    <div class="content">
+                        <div>
+                            <h2>Port of Spain, Trinidad & Tobago</h2>
+                            <a href="#Trinidad-Heading"><p>Read More.....</p></a>
+                        </div>
+                    </div>
+                </button>
             </div>
         </section>
     </div>
       
       <hr>
 
-      <div id="Locations" class="black-text">
-        <div class="location-container">
-          <li id="Amsterdam-Heading" class="list-heading">Amsterdam, Netherlands</li>
-          <p>To the scores of tourists who visit each year, Amsterdam is known for its historical attractions, 
-          for its collections of great art, and for the distinctive colour and flavour of its well-preserved old sections.
-           Since the mid-1960s Amsterdam has been known also for a permissive and accepting atmosphere.</p>
-          <img src="images/cities/amsterdam.jfif" class="img-1" alt="">
-        </div>
-        <li id="Berlin-Heading" class="list-heading">Berlin, Germany</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Chennai-Heading" class="list-heading">Chennai, India</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Mumbai-Heading" class="list-heading">Mumbai, India</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Sicily-Heading" class="list-heading">Sicily, Italy</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Paris-Heading" class="list-heading">Paris, France</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Maldives-Heading" class="list-heading">North Male Atoll, Maldives</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Shimla-Heading" class="list-heading">Shimla, India</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Singapore-Heading" class="list-heading">Singapore City, Singapore</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Indonesia-Heading" class="list-heading">Bali, Indonesia</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Los-Angeles-Heading" class="list-heading">Los Angeles, CA, USA</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Hawaii-Heading" class="list-heading">Honolulu, Hawaii, USA</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Trinidad-Heading" class="list-heading">Port of Spain, Trinidad & Tobago</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="South-Africa-Heading" class="list-heading">Cape Town, South Africa</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Egypt-Heading" class="list-heading">Cairo, Egypt</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="Sydney-Heading" class="list-heading">Sydney, Australia</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-        <li id="New-Zealand-Heading" class="list-heading">Wellington, New Zealand</li>
-        <p>Ee Saala Cup Namde</p><img src="" alt="">
-      </div>
+      <div id="Locations">
+            <h1>Our Locations</h1>
+            <div id="Amsterdam-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/amsterdam.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Amsterdam, Netherlands</h3>
+                    <p>To the scores of tourists who visit each year, Amsterdam is known for its historical attractions, 
+                    for its collections of great art, and for the distinctive colour and flavour of its well-preserved old sections.
+                    Since the mid-1960s Amsterdam has been known also for a permissive and accepting atmosphere.</p>
+                </div>
+            </div>
+            <div id="Berlin-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/berlin.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Berlin, Germany</h3>
+                    <p>Tourists flock to Germany to visit the stylish cities, legendary fairytale castles,
+                         beautiful lakes and forests, and for the hundreds of cultural and historic wonders
+                          - as well as to sample its world-famous beers, in particular during the Munich Beer Festival held every October. </p>
+                </div>
+            </div>
 
+            <div class="container">
+                <div>
+                    <img class="img" src="images/cities/chennai.jpg" alt="">
+                </div>
+                <div id="Chennai-Heading" class="text">
+                    <h3>Chennai, India</h3>
+                    <p>Chennai is referred as gateway to South India. It may not have a Red Fort or a Marine Drive or a Victoria Memorial,
+                       but it is India’s oldest modern city. There are several temples, churches, forts, mosques, palaces and natural attractions in Chennai.
+                        It is one of the four metropolitan cities of India and is the capital of Tamilnadu. This state is famous for its beach, temples, fabrics,
+                         monuments, Carnatic music, classical dances, and food. It’s an ancient city known for its culture, trade and architecture.
+                          Chennai have its mark during the colonial times of British and French. It’s a small Asia where you can witness different kinds of people,
+                           cultures, and traditions.</p>
+                </div>
+            </div>
+
+            <div id="Mumbai-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/mumbai.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Mumbai, India</h3>
+                    <p>Overlooking the blue expanse of the Arabian Sea, the city of stars, Mumbai is Maharashtra’s sweetheart. Amidst its cosmopolitan crowd,
+                         there still exists a world that is connected with rich history that can undoubtedly, win every heart.
+                          Right from the holy sites to often crowded beaches, from colourful bazaars to happening nightlife and from sky scrapers to high-end 
+                          hotels, Mumbai is filled with attractions that you cannot give a miss .The heart of Mumbai has some of the best and beautiful colonial 
+                          architecture and if you venture out to the lesser known lanes, 
+                        you will also come across several distinct bazaars, temples, fancy restaurants and a nightlife that is one of its kinds. 
+                    </p>
+                </div>
+            </div>
+
+            <div id="Sicily-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/sicily.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Sicily, Italy</h3>
+                    <p>Discover this beguiling Italian island, a rich centre of Mediterranean culture and home to some of Europe’s most enchanting vistas. 
+                        At some point during its history, Sicily has been occupied by almost every major Mediterranean civilization. 
+                        The area continues to serve as an important crossroad between Africa and Europe. This largest of Italy’s islands has landscape with a
+                         mesmerizing combination of crystal clear seas, rumbling volcanoes, lush vegetation and ancient ruins. Dive, swim, hike and climb across
+                          Sicily and its offshore islands. Sample the region’s unique and delicious cuisine as you travel from town to town.</p>
+                </div>
+            </div>
+
+            <div id="Paris-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/paris.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Paris, France</h3>
+                    <p>Paris is not just the capital of France; it’s the capital of fashion and the city of love. Located by the River Seine in the north of France,
+                         Paris is reputed for being the most beautiful and romantic city in the world. It is overwhelmed with culture, history, iconic architecture,
+                          arty treasures, delicious food and exciting fashion. Europe’s most enchanting city, Paris is known for its many monuments,
+                           especially the Eiffel Tower, Notre-Dame Cathedral, Arc de Triomphe, Opéra Garnier, Les Invalides, etc. 
+                           Paris was home to some of the best artists through history; hence, it harbors treasures and antiques from the masters like Picasso,
+                            Van Gogh, Monet, Dalí, and Renoir. Paris (and the whole of France) is famous for its food and drinks; from cozy little cafes to one
+                             of its many Michelin-starred restaurants – the food is prepared and presented with perfection here. Whether you’re a first-timer or
+                              regular visitor, Paris always seems magical as there are so many places to explore. It’s no wonder that the city is one of the most
+                               popular tourist destinations in the world and welcomes over 45 million visitors every year.</p>
+                </div>
+            </div>
+
+            <div id="Maldives-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/maldives.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>North Male Atoll, Maldives</h3>
+                    <p>The country’s unique geography mesmerizes every visitor. Reefs that offer bands of color, tiny jewel-like islands rimmed with the whitest 
+                        of soft sand surrounded by the clearest shallow waters that one can imagine. The beauty of the Maldives is not only above the water. 
+                        Their music and dance display strong influences of East Africa, Arabia and the Indian subcontinent. There is a rich tradition of Maldivian crafts;
+                         lacquered wooden ornaments, finely woven reed mats, and coral carvings are crafts that have been passed down through several generations.
+                    </p>
+                </div>
+            </div>
+
+            <div id="Shimla-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/shimla.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Shimla, India</h3>
+                    <p>Snow-capped Himalayan peaks and green pastures surround Shimla, the capital of Himachal Pradesh. Enjoy a heritage walk through Shimla’s
+                         Victorian-era architecture, labyrinthine bazaars and lengthy pedestrian shopping mall. Don’t cause too much trouble taking in the town
+                          from Scandal Point, a large, open square;</p>        
+                </div>
+            </div>
+
+            <div id="Singapore-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/singapore.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Singapore City, Singapore</h3>
+                    <p>Singapore, the world’s only island city-state is a mesmerizing destination.
+                        The island nation of Singapore is home to people belonging to multiple cultures and nationalities. 
+                        It has a tropical climate and the weather changes from clear skies to heavy rains in a matter of minutes.
+                        Singapore is home to some really endearing tourist attractions and has much to allure the travellers. Gardens by the Bay,
+                         the largest tropical orchid garden in the world, houses the most exotic variety of plants offers the most bespoken experience.
+                          The Singapore Zoo gives you an opportunity to engage in a close encounter with the orang utans while savoring a hearty breakfast.
+                           One can also meet the first polar bear born and brought up in South East Asia or feed the giraffes. Another attraction is the 
+                           breathtaking river safari that helps you interact with a wide variety of aquatic animals. The Sentosa island, the famous island
+                            resort offers bags full of entertainment. It houses the Universal Studios, a Hollywood movie magic through thrilling rides and 
+                            other movie-themed attractions.
+                    </p>
+                </div>
+            </div>
+
+            <div id="Indonesia-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/indonesia.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Bali is a colourful island that lies within the exotic Indonesian archipelago. One among 17,500 islands, Bali’s beauty is unique and 
+                        incomparable. Known for its fascinating jungles, terraced rice fields, legendary volcanoes, mystical temples and stunning beaches, 
+                        this island is a welcoming haven for travellers from all over the world. There’s so much to do here – from taking a stroll on the serene
+                         Seminyak Beach to getting an authentic Balinese massage to snorkelling or scuba diving in crystal clear waters to visiting the rice 
+                         terraces of Tegalalang or watching the sunset from the lovely Uluwatu Temple, overlooking the Indian Ocean. In fact, the city is dotted
+                          with huge statues and monuments that portray stories from the epics. Bali’s attractions also include historical sites, museums and art
+                           galleries. Balinese food is rich and distinctive, packed with flavours and spice. The people are warm and will always greet you with 
+                           a smile. The island is mystical and spiritual, leaving visitors with a lasting impression and a sense of calmness.</p>
+                </div>
+            </div>
+
+            <div id="Los-Angeles-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/los-angeles.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Los Angeles, CA, USA</h3>
+                    <p>Los Angeles is a city where dreams come true. This bustling metropolis in California, USA, is blessed with abundant natural beauty 
+                        in the form of hills, beaches, and parks. Home to Hollywood, it is aptly named as the ‘Entertainment Capital of the World.' 
+                        Stroll around the teeming streets, and you might run into your favorite celebrity. A cultural mecca, the city has been a platform
+                         for some of the most talented people in the world. ‘Live and let live’ is the motto of its residents, enabling you to be yourself
+                          and chase your dreams. The ‘City of Angels’ has no shortage of interesting places. The beautiful Pacific beaches blend 
+                          beautifully with lush green hills. The landscape is bejeweled with the gleaming Hollywood Sign. The city has world-class museums 
+                          like the Natural History Museum, housing billion-year-old artifacts, and specimens. The Universal Studios is a magical world where 
+                          you can meet your favorite reel-life characters. The Dolby Theatre is the venue for several live performances and award shows, including
+                           the Oscars. The forever-sunny weather is the best aspect of Los Angeles, urging you to explore and enjoy the outdoors.</p>
+                </div>
+            </div>
+
+            <div id="Hawaii-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/hawaii.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Honolulu, Hawaii, USA</h3>
+                    <p>The perfect example of an island paradise, Hawaii stands out for its beautiful landscapes, gorgeous beaches and a vibrant culture.
+                         Situated in the Central Pacific Ocean, Hawaii is a group of volcanic islands, visited by millions of tourists every year. 
+                         Six islands in Hawaii attract most of the tourism, including the Island of Hawaii or 'the Big Island,' Oahu, Maui, Kauai, Molokai
+                          and Lanai. Hawaii has some of the most beautiful white sand beaches on the planet and Waikiki Beach is one of those. Besides 
+                          presenting tranquil ambience, this beach offers endless opportunities for surfing and sunbathing. Honolulu is the Capital city of Hawaii,
+                           where most of the tourists head for a Hawaii vacation. Lying in the island of Oahu, this city is the centre of activity and the most 
+                           densely populated in Hawaii.</p>
+                </div>
+            </div>
+
+            <div id="Trinidad-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/trinidad.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Port of Spain, Trinidad & Tobago</h3>
+                    <p>Port of Spain, the capital of Trinidad and Tobago, has the tall buildings, neon lights and crowded streets of many cities, plus a multicultural
+                         Caribbean character and a home-grown calypso soundtrack. The best-known event is the flamboyant pre-Lenten Carnival. Among the city's
+                          other offerings are cricket and football matches, year-round festivals, a botanic garden, malls, an art and history museum and historic
+                           buildings. Entertainment options abound, but be cautious after dark.</p>
+                </div>
+            </div>
+
+            <div id="South-Africa-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/south-africa.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Cape Town, South Africa</h3>
+                    <p>Cape Town, the second largest city of South Africa is also the capital of the Western Cape Province. 
+                        The city has been referred to as ‘Tavern of the Seas’ and ‘The Mother City’. With its golden beaches,
+                         shimmering seas, rolling vineyards and the great Table Mountain, Cape Town is loved by its inhabitants 
+                         and captures the hearts of all its visitors. Mother Nature has blessed Cape Town with breath-taking gardens,
+                          towering boulders, underground caves, floral beds and so much more. But the people have also added to the 
+                          beauty of the city with striking street art, sizzling cuisine and a thriving nightlife. 
+                          The blend of cultures makes Cape Town as one of the most cosmopolitan cities of South Africa. 
+                          Here, you can enjoy the great outdoors by taking part in activities like surfing, hiking, mountain biking, 
+                          paragliding and much more. The wine of South Africa is known all over the world and you can watch how it’s made 
+                          with guided wine tasting tours, where you get to partake in the making and sampling of wine. 
+                          Some of the important places of interest include Kirstenbosch Botanical Gardens, Green Point Park, Boulders Beach, 
+                          Company’s Gardens, Storms River Mouth, etc.</p>
+                </div>
+            </div>
+
+            <div id="Egypt-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/egypt.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Cairo, Egypt</h3>
+                    <p>BannerImage
+                        About Cairo
+                        Cairo is the largest city in the Arab world and also one of the most interesting and dynamic ones. With a history and
+                         heritage going back to one of the pivotal civilisations in the world, the Egyptian Civilisation, Cairo is the hub of
+                          culture and politics not just for Egypt but for the region as a whole. Cairo is the capital of Egypt and built on the
+                           banks of the river Nile in an area which has witnessed the rise and fall of many civilisations through the centuries.
+                            This has resulted in the integration of ancient, medieval, and modern traits into all aspects of life here. This makes 
+                            Cairo a unique place to experience. The main attractions in Cairo are primarily the various historical landmarks that 
+                            dot the area from ancient to more recent times. Perhaps the most famous of all the monuments and landmarks are the 
+                            Pyramids of Giza located within the city limits in Cairo. There are multiple museums within the city, with the Museum of Cairo
+                             being the largest of them displaying artefacts belonging to the ancient Egyptian civilisation. There are also other attractions
+                              such as palaces, historical mosques, mausoleums, citadels and much more and Cairo is also known for its nightlife and various cafes.</p>
+                </div>
+            </div>
+
+            <div id="Sydney-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/australia.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Sydney, Australia</h3>
+                    <p>Known as the Harbour City, Sydney is stretched across sandy beaches and miles of ocean coastline. History, culture, tradition,
+                         art, fashion, cuisine and nature are in their prime in Sydney. From great opera houses to the serene and calm harbors and beaches,
+                          Sydney houses various forms of natural beauty and exquisiteness. Sydney is one of the ethnically and culturally diverse cities in
+                           Australia. Sydney is a home to many immigrants and various tribes. The monuments and historical artifacts of Sydney also catch the
+                            eyes of many. It is also the home to Sydney Opera House and Sydney Harbour Bridge which are an iconic structure of not only Sydney
+                             but the world. It also has a very compact city center and sprawling suburbs that together form the mesmerizing silhouette 
+                             of this city. The beaches, exotic wildlife, and extensive flora are very famous amongst the tourists. From the rugged Pacific
+                              coastline to the hospitable Sydneysiders and from the lively food scenes to the exuberant nightlife, everything about this 
+                              fabulously enticing city is inviting. There is always something adventurous going on in this city and if you are looking for a 
+                              thrill, this city has a lot to offer you.</p>
+                </div>
+            </div>
+
+            <div id="New-Zealand-Heading" class="container">
+                <div>
+                    <img class="img" src="images/cities/new-zealand.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h3>Wellington, New Zealand</h3>
+                    <p>Wellington is the Capital City of New Zealand. Wellington is an experience that will reveal the creative, 
+                        political and cultural nature of New Zealand, but still provide blockbuster scenery. Wellington is quite a 
+                        compact city sandwiched between the edge of the water and the hills that surround the area. Exloring Wellington 
+                        is easiest by walking and many of the attractions of Wellington are handy including Te Papa, the national museum. 
+                        The city has huge range of cafes, theatres, art galleries, attractions and a busy nightlife.</p>
+                </div>
+            </div>
+
+      </div>
 
     </section>
 
-    
-
     <section class="footer">
+        <a href="#top">Scroll to Top</a>
     </section>
 
 

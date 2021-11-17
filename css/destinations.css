@@ -1,118 +1,95 @@
-h3{
-    color: #212121;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.75em;
-    font-weight: 900;
-}
-
-.black-text{
+body{
   color: #212121;
-  font-size: 1.75em;
   font-family: 'Roboto', sans-serif;
-  font-weight: 900;
-  position: absolute;
-  text-align: left;
-  left: 1.5em;
 }
 
-.location-container{
-  margin-bottom: 10%;
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3.5em;
 }
 
-.location-container>li:first-child {
-  padding-top: 0em;
-}
-
-.location-container>li{
-  list-style-type: none;
-  padding-top: 1em;
+#body{
+  margin-top: 0;
+  padding: 0;
+  height: fit-content;
 }
 
 #world-map>h3{
     margin-bottom: 1.25em;
 }
-
-img+a:hover{
-    background-color: #6D9886;
-}   
-
-
-#Sicily{
-  position: absolute;
-  z-index: 3;
-  transform: translate(-1500%, 80%);
-  font-size: 8em;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #6D9886;
-}
+  
 
 #Heading{
     color: #212121;
 }
 
 hr{
-    margin: 4em auto 4em;
+    margin: 0 auto 4em;
     border: 0.025em #6D9886 dotted;
     border-bottom: 0em;
     border-width: 0.5em;
     width:30%;
 }
 
-.list-heading{ 
+.container h3{ 
   text-decoration: underline solid #6D9886;
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.25em;
+  font-weight: 900;
 }
 
-p{
-  display: inline-block;
-  font-size: 0.75em;
+.text {
+  font-size: 18px;
+  text-align: left;
+  padding-left: 150px;
+  padding-right: 50px;
+  color: black;
+}
+
+#Locations h1{
+  font-weight: bold;
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+.img{
+  padding-left: 50px;
+  max-width: 480px;
+  border-radius: 100%;
+}
+
+
+#Locations p{
   text-align: justify;
-  font-weight: 400;
-  width: 65%;
 }
 
-.img-1{
-  position: absolute;
-  left: 70% !important; 
-  width: 25%;
+.image {
+  flex-basis: 40%;
 }
 
 
-
-@media screen and (min-width: 750px) {
-  .map{
-    width: 45em;
+@media screen and (max-width: 1000px) {
+  .container{
+      flex-direction: column;
+  }
+  #Locations .img{
+    width: 80%;
+    border-radius: 50%;
+    flex: 1;
+    flex-wrap: wrap;
+    padding-left: 0;
+    transform: scale(0.75);
+  }
+  .image{
+      height: 15em;
+  }
+  #Locations h3{
+    text-align: center
+  }
+  .text{
+      padding: 0 2.5em 0 2.5em;
   }
 }
-
-
-@media screen and (max-width:1000px){
-    .map{
-      width: 40em;
-    }
-}
-
-@media screen and (max-width:655px){
-  .map{
-    width: 35em;
-  }
-}
-
-@media screen and (min-width:1250px){
-  .map{
-    transform: scale(0.8);
-  }
-}
-
-@media screen and (max-width:600px){
-
-  h3{
-    font-size: 1.25em !important;
-  }
-
-  .map{
-    width: 27em;
-  }
-}
-
-
-
