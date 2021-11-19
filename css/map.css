@@ -60,9 +60,12 @@
     margin: 0 auto;
   }
 
-  .distribution-map p{
+  .distribution-map a{
     text-align: center;
+    color: #D9CAB3;
   }
+
+  
 
   .distribution-map > img {
     width: 100%;
@@ -124,5 +127,8 @@
     overflow: hidden;
   }
   .distribution-map .map-point:active .content a:hover, .distribution-map .map-point:active .content a:active, .distribution-map .map-point:focus .content a:hover, .distribution-map .map-point:focus .content a:active {
-    color: #afe1fa;
+    color: #6D9886;
   }
+
+
+

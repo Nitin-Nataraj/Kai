@@ -31,6 +31,95 @@ a:hover{
   text-underline-offset: 0.5rem;
 }
 
+ul.nav-outer{
+  display: inline-block;
+  padding-left: 0;
+  font-size: 1.2rem;
+  margin-top: 0; margin-bottom: 0;
+}
+
+ul.nav-outer li{
+  list-style: none;
+  text-decoration: none;
+}
+
+ul.nav-outer li a{
+  color: #212121;
+}
+
+li.nav-inner{
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-align: justify;
+  height: 0;
+}
+
+ul.nav-outer:hover{
+  text-align: justify;
+  padding-left: 0.5em;
+}
+
+
+ul.nav-outer:hover .nav-outer-heading{
+  color: #6D9886;
+  font-weight: bold;
+  margin-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+ul.nav-outer:hover .nav-inner{
+  display: table;
+}
+
+.nav-inner{
+  display: none;
+}
+
+ul.menu-outer{
+  color: #F6F6F6;
+  display: inline-block;
+  padding-left: 0;
+  font-size: 1.2rem;
+  margin-top: 0; margin-bottom: 0;
+}
+
+ul.menu-outer li{
+  list-style: none;
+  text-decoration: none;
+}
+
+ul.menu-outer li a{
+  color: #F6F6F6;
+}
+
+li.menu-inner{
+  padding-bottom: 0.5em;
+  text-align: justify;
+  height: 0;
+}
+
+ul.menu-outer:hover{
+  text-align: justify;
+}
+
+
+ul.menu-outer:hover .menu-outer-heading{
+  font-weight: 900;
+  transform: translateX(0em);
+}
+
+.menu-outer-heading{
+  transform: translateX(-1.25em);
+}
+
+ul.menu-outer:hover .menu-inner{
+  display: table;
+}
+
+.menu-inner{
+  display: none;
+}
+
 section.header>h1{
   margin: 0px auto 1em;
   padding: 1em 0 0.25em 0;
@@ -106,14 +195,14 @@ user-select: none;
 
 #menuToggle a
 {
-color: #F6F6F6;
+  color: #F6F6F6;
 
-transition: color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 #menuToggle a:hover
 {
-color: #D9CAB3;
+  color: #D9CAB3;
 }
 
 

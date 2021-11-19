@@ -21,41 +21,47 @@
     </a>          
         <!--<a href="https://icons8.com/icon/9659/phone">Phone icon by Icons8</a>-->
 
-    <nav role="navigation">
-        <div id="menuToggle">
-          <!--     Hidden checkbox    -->
-          <input type="checkbox" />
-          
-          <!--   Some spans to act as a hamburger. -->
-          <span></span>
-          <span></span>
-          <span></span>
-          
-          <ul id="menu">
-            <a href="destinations.html#body"><li>Destinations</li></a>
-            <a href="#"><li>The Experience</li></a>
-            <a href="#"><li>Membership</li></a>
-            <a href="#"><li>Media</li></a>
-            <select name="about" onchange="location = this.value;">
-              <option style="display:none" selected="selected" class="navlink" value="about">About Us</option>
-              <option class="navlink bold gold" value="boardOfDirectors.html">Board of Directors</option>
-              <option class="navlink" value="contactUs.html">Contact Us</option>
-          </select>
-          </ul>
-        </div>
-
-        <div id="nav-desktop">
-            <a class="navlink" href="destinations.html#body">Destinations</a>
-            <a class="navlink">The Experience</a>
-            <a class="navlink">Membership</a>
-            <a class="navlink">Media</a>
-            <select name="about" onchange="location = this.value;">
-              <option style="display:none" selected="selected" class="navlink" value="about">About Us</option>
-              <option class="navlink" value="boardOfDirectors.html">Board of Directors</option>
-              <option class="navlink" value="contactUs.html">Contact Us</option>
-            </select>
-        </div>
-      </nav>
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--     Hidden checkbox    -->
+            <input type="checkbox" />
+            
+            <!--   Some spans to act as a hamburger. -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <ul id="menu">
+              <a id="yellow-text" href="destinations.html#body"><li>Destinations</li></a>
+              <a href="#"><li>The Experience</li></a>
+              <a href="#"><li>Membership</li></a>
+              <a href="#"><li>Media</li></a>
+              <ul class="menu-outer">
+                <li class="menu-outer-heading"> About Us
+                    <li class="menu-inner"><a href="boardOfDirectors.html">Board of Directors</a></li>
+                    <li class="menu-inner"><a  href="contactUs.html">Contact Us</a></li>
+                    <li class="menu-inner"><a >CSR</a></li>
+                    <li class="menu-inner"><a >The Company</a></li>
+                </li>
+              </ul>
+            </ul>
+          </div>
+  
+          <div id="nav-desktop">
+              <a class="navlink bold" href="destinations.html#body">Destinations</a>
+              <a class="navlink">The Experience</a>
+              <a class="navlink">Membership</a>
+              <a class="navlink">Media</a>
+              <ul class="nav-outer">
+                  <li class="nav-outer-heading"> About Us
+                      <li class="nav-inner"><a class="navlink" href="boardOfDirectors.html">Board of Directors</a></li>
+                      <li class="nav-inner"><a class="navlink" href="contactUs.html">Contact Us</a></li>
+                      <li class="nav-inner"><a class="navlink">CSR</a></li>
+                      <li class="nav-inner"><a class="navlink">The Company</a></li>
+                  </li>
+              </ul>
+          </div>
+        </nav>
 
     <section class="body">
 
