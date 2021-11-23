@@ -130,5 +130,38 @@
     color: #6D9886;
   }
 
+  @media screen and (max-width:750px){
+    .distribution-map .map-point{
+      transform: translate(-80%,-110%) !important;
+    }
 
+  .distribution-map .map-point:active, .distribution-map .map-point:focus {
+      width: 120px;
+      height: 120px;
+  }  
 
+    .map-point h2{
+      padding-top: 5%;
+      font-size: .75em !important;
+    }
+
+    .map-point a{
+      font-size: 0.75em !important;
+    }
+}
+
+@media screen and (max-width:1000px){
+  .distribution-map .map-point{
+    transform: translate(-60%,-100%) !important;
+  }
+
+  .map-point h2{
+    padding-top: 5%;
+    font-size: medium !important;
+  }
+
+  .map-point a{
+    font-size: small !important;
+  }
+}
+  
