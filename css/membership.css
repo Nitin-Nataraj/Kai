@@ -1,0 +1,152 @@
+body{
+    color: #212121;
+}
+
+.body{
+    height: max-content;
+}
+
+.title h2{
+    font-weight: 600;
+    font-size: xx-large;
+    margin-bottom: 0.5em;
+}
+
+#Stylized_Name{
+    margin-top: 0em;
+    font-weight: bolder;
+    font-size: 2.5em;
+    font-family: 'Dancing Script',cursive;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 0 1.5em  1.5em 1.5em;
+}
+
+.column h3{
+    border-bottom: #212121 dashed 1px;
+    font-size: x-large;
+}
+
+.column{
+    width: 33.33%;
+    margin: 0 2.5%;
+    border-radius: 5%;
+    flex-direction: column;
+    padding: 2%;
+    border: #212121 solid 1px;
+    border-width: 0.1em;
+    background-color: #6D9886;
+}
+
+.pricing{
+    font-size: large;
+    font-weight: bold;
+    color: #f6f6f6;
+}
+
+#pricing-container{
+    background-color: #212121;
+    margin: 5%;
+    border: #6D9886 2px solid;    
+    border-radius: 5%;
+}
+
+#pricing-container h1{
+    color: #f6f6f6;
+    text-decoration: wavy;
+}
+
+#pricing-container a{
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding-bottom: 1em;
+}
+
+#pricing-container a:hover{
+    color: #D9CAB3;
+}
+
+sup{
+    line-height: 20%;
+    padding-left: 0.05em;
+    font-weight: bolder;
+}
+
+.justified{
+    text-align: justify;
+    padding: 0 5%;
+}
+
+.container{
+    background-color: #f6f6f6;
+    margin: 5%;
+    border: #212121 2px solid;    
+}
+
+.container br{
+    line-height: 2% !important;
+}
+
+
+@media screen and (max-width:1000px){
+    #pricing-container{
+        background-color: #212121;
+        margin: 5%;
+        border: #6D9886 2px solid;    
+        border-radius: 5%;
+    }
+    #pricing-container h1{
+        margin-bottom: 0.5em;
+    }
+    h1.justified{
+        font-size: medium;
+    }    
+    p.justified{
+        font-size: small;
+    }
+    .row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .column{
+        width: 75%;
+        margin-bottom: 1em;
+        font-size: smaller;
+    }
+    .column h3{
+        border-bottom: #212121 dashed 1px;
+        font-size: x-large;
+    }
+    .container-content{
+        padding-bottom: 0.5em;
+    }
+}
+
+@media screen and (max-width:350px){
+    #pricing-container{
+        background-color: #212121;
+        margin: 5%;
+        border: #6D9886 2px solid;    
+        border-radius: 5%;
+    }
+    #pricing-container h1{
+        margin-bottom: 0.5em;
+    }
+    h1.justified{
+        font-size: medium;
+        margin-bottom: 0.5em;
+    }    
+    p.justified{
+        font-size: smaller;
+    }
+    .column{
+        width: 100%;
+        margin-bottom: 1em;
+        font-size: smaller;
+    }
+}

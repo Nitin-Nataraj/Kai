@@ -76,6 +76,7 @@ ul.nav-outer:hover .nav-outer-heading{
 
 ul.nav-outer:hover .nav-inner{
   display: table;
+  animation: slide-down 0.5s ease-in-out;
 }
 
 .nav-inner{
@@ -181,7 +182,7 @@ option{
 .footer{
   color: #F6F6F6;
   background-color: #212121;
-  height: 150px;
+  height: 10em;
   border-bottom: #F6F6F6 solid 0.1em; border-top: #6D9886 solid 0.2em;
 }
 

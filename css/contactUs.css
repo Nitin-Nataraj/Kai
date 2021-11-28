@@ -18,7 +18,7 @@ hr{
 }
 
 .company p{
-    color: black; 
+    color: #212121; 
     padding-bottom:2.5em !important; 
     font-size:1em;
 }
@@ -39,7 +39,7 @@ hr{
 .column {
     float: left;
     width: 33.33%;
-    color: black;
+    color: #212121;
 }
 
 .row:after {
@@ -57,12 +57,12 @@ hr{
 }
 
 .heading {
-    color: black;
+    color: #212121;
     font-size: 30px;
 }
 
 .form {
-    color: black;
+    color: #212121;
     font-size: 20px;
     text-align: center;
 }

@@ -156,12 +156,32 @@
   }
 
   .map-point h2{
-    padding-top: 5%;
+    padding-top: 25%;
     font-size: medium !important;
   }
 
   .map-point a{
     font-size: small !important;
+  }
+}
+
+@media screen and (max-width:750px){
+  .map-point h2{
+    padding-top: 5%;
+  }
+  
+  #Mumbai-point h2{
+    padding-top: 7.5%; 
+    font-size: small !important;
+  }
+
+  #Indonesia-point h2{
+    font-size: large !important;
+  }
+
+  #Los-Angeles-point h2, #Hawaii-point h2, #Trinidad-point h2{
+    padding-top: 0%;
+    font-size: 1.2em !important;
   }
 }
   

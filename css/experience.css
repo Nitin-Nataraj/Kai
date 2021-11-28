@@ -1,0 +1,25 @@
+.body{
+    color: #212121;
+}
+
+#page-title{
+    color: #212121;
+    font-size: x-large;
+    text-decoration: underline 0.15em #6D9886;
+    margin-bottom: 1.5em;
+}
+
+p{
+    text-align: justify;
+    font-size: large;
+}
+
+.container{
+    margin: 2em 5%;
+    padding: 5%;
+    background-color: #f6f6f6;
+    border: #f6f6f6 solid 2px;
+    border-radius: 1%;
+    outline: 2.5px solid #212121;
+    outline-offset: -0.3em;
+}
