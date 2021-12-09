@@ -23,3 +23,13 @@ p{
     outline: 2.5px solid #212121;
     outline-offset: -0.3em;
 }
+
+
+@media screen and (max-width:1000px){
+    #page-title{
+        font-size: x-large;
+    }
+    .container p{
+        font-size: medium;
+    }
+}

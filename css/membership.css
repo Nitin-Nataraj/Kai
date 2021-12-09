@@ -125,6 +125,9 @@ sup{
     .container-content{
         padding-bottom: 0.5em;
     }
+    .container{
+        line-height: 1.5;
+    }
 }
 
 @media screen and (max-width:350px){
