@@ -197,7 +197,7 @@ position: absolute;
 top: 60px;
 left: 25px;
 
-z-index: 1;
+z-index: 5;
 
 -webkit-user-select: none;
 user-select: none;
@@ -228,7 +228,7 @@ left: -5px;
 cursor: pointer;
 
 opacity: 0; /* hide this */
-z-index: 2; /* and place it over the hamburger */
+z-index: 8; /* and place it over the hamburger */
 
 -webkit-touch-callout: none;
 }
@@ -247,7 +247,7 @@ position: relative;
 background: #F6F6F6;
 border-radius: 3px;
 
-z-index: 1;
+z-index: 6;
 
 transform-origin: 4px 0px;
 
@@ -305,10 +305,11 @@ width: max-content;
 margin: -100px 0 0 -50px;
 padding: 50px;
 padding-top: 125px;
-
+z-index: 5;
 background: #6D9886;
 list-style-type: none;
 -webkit-font-smoothing: antialiased;
+
 /* to stop flickering of text in safari */
 
 transform-origin: 0% 0%;

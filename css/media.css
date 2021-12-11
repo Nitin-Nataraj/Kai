@@ -1,0 +1,333 @@
+
+#page-head{
+    font-size: 2.5em;
+    color: #212121;
+    font-family: 'Dancing Script',cursive;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+
+#gallery{
+    margin: 5% 12.5%;
+}
+
+.carousel {
+    margin-left: 0%;
+    margin-right: 0%;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem var(#212121);
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 700px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none;
+}
+
+.slide-container {
+    display: block;
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover+.carousel-controls label {
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked+.slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked+.slide-container .carousel-controls label {
+    display: block;
+}
+
+input#img-1:checked~.carousel-dots label#img-dot-1,
+input#img-2:checked~.carousel-dots label#img-dot-2,
+input#img-3:checked~.carousel-dots label#img-dot-3,
+input#img-4:checked~.carousel-dots label#img-dot-4,
+input#img-5:checked~.carousel-dots label#img-dot-5,
+input#img-6:checked~.carousel-dots label#img-dot-6 {
+    opacity: 1;
+}
+
+input:checked+.slide-container .nav label {
+    display: block;
+}
+
+
+/*Cards*/
+
+.cards {
+    color: #212121;
+    margin: 5% auto;
+    background-color: #f6f6f6;
+    padding: 7.5% 0;
+}
+
+.cards h2{
+    padding: 0 0 5%;
+}
+
+:root {
+    --light-gray: #212121;
+    --gray: #37474f;
+    --primary: #6D9886;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--gray);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(250px, 300px);
+    justify-content: center;
+    gap: 4rem;
+    margin: 2rem;
+}
+
+.card-container {
+    box-shadow: 0rem 0.125rem 0.5rem 0rem var(--light-gray);
+    background-color: #f6f6f6;
+    text-align: justify;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-container h1{
+    text-align: center;
+    font-size: large;
+    color: #212121;
+    font-weight: bold;
+}
+
+.profile-image {
+    width: 20rem;
+    height: 12rem;
+    transition: all 0.5s ease 0;
+}
+
+.profile-image:hover {
+    filter: grayscale(1);
+}
+
+.name {
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+.description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 650px) {
+    .wrapper {
+        grid-template-columns: repeat(2, minmax(250px, 300px));
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .wrapper {
+        grid-template-columns: repeat(3, minmax(250px, 300px));
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        grid-template-columns: repeat(4, minmax(250px, 300px));
+    }
+}
+
+
+
+/* News Pieces */
+
+.news-pieces {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin: 2% 10%;
+    color: #212121;
+}
+
+.news-pieces h2{
+    text-align: center;    
+}
+
+.news-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2.5% auto 2% auto;
+    background-color: #f6f6f6;
+    padding: 5%;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem var(--light-gray);
+    border-radius: 3.5%;
+}
+
+.news-img {
+    border-radius: 50%;
+    height: 15em;
+    width: 20em;
+}
+
+.news-text {
+    color: #212121;
+    font-size: larger;
+    margin-top: 3%;
+    padding-left: 5%;
+}
+
+
+.image{
+    margin: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media screen and (max-width:1000px){
+    #gallery{
+        margin: 5% 0%;
+    }
+    .carousel {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .news-pieces img{
+        transform: scale(0.8);
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+    }
+    .news-text{
+        margin-top: 10%;
+    }
+    .news-pieces{
+        margin: 10% 10%;
+    }
+    .news-pieces h2{
+        margin: 10% 0;
+    }
+  }
+
+@media screen and (max-width:756px){
+    .news-text{
+        font-size: medium;
+        padding: 5% 5% 10%;
+    }
+}

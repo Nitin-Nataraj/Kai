@@ -9,6 +9,7 @@ body{
 .title h2{
     font-weight: 600;
     font-size: xx-large;
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
@@ -31,6 +32,7 @@ body{
 }
 
 .column{
+    text-align: justify;
     width: 33.33%;
     margin: 0 2.5%;
     border-radius: 5%;
@@ -47,11 +49,15 @@ body{
     color: #f6f6f6;
 }
 
+.pricing-text{
+    font-size: medium;
+}
+
 #pricing-container{
     background-color: #212121;
     margin: 5%;
-    border: #6D9886 2px solid;    
-    border-radius: 5%;
+    padding: 5% 5%;
+    border: #6D9886 2px solid; 
 }
 
 #pricing-container h1{
@@ -59,11 +65,10 @@ body{
     text-decoration: wavy;
 }
 
-#pricing-container a{
-    display: inline-block;
+#pricing-container a{   
     cursor: pointer;
     text-decoration: none;
-    padding-bottom: 1em;
+    padding-top: 3%;
 }
 
 #pricing-container a:hover{
@@ -81,32 +86,70 @@ sup{
     padding: 0 5%;
 }
 
+
 .container{
     background-color: #f6f6f6;
     margin: 5%;
-    border: #212121 2px solid;    
+    border-radius: 5%;  
+    box-shadow: 0rem 0.125rem 0.5rem 0rem #212121;  
+    padding: 2.5%;
 }
 
 .container br{
     line-height: 2% !important;
 }
 
+.tandc{
+    border-radius: 0%;
+}
+
+.tandc .container{
+    border-radius: 0%;
+}
+
+.tandc h1{
+    margin-bottom: 2%;
+}
+
+
+@media screen and (min-width:2000px){
+    .column h3{
+        font-size: 2.75em;
+    }
+    #pricing-container h1{
+        font-size: 3em;
+    }
+    .column p.pricing{
+        font-size: 1.75em;
+    }
+    .column p.pricing-text{
+        font-size: 1.35em;
+    }
+    .container-content{
+        font-size: 1.5em;
+    }
+    .title h2{
+        font-size: 4em;
+    }
+    #Stylized_Name{
+        font-size: 4em;
+    }
+}
 
 @media screen and (max-width:1000px){
     #pricing-container{
         background-color: #212121;
         margin: 5%;
-        border: #6D9886 2px solid;    
-        border-radius: 5%;
+        border: #6D9886 2px solid; 
     }
     #pricing-container h1{
-        margin-bottom: 0.5em;
+        margin: 2.5em 0 1.5em;
     }
     h1.justified{
         font-size: medium;
     }    
     p.justified{
-        font-size: small;
+        font-size: medium;
     }
     .row{
         flex-direction: column;
@@ -114,8 +157,9 @@ sup{
         justify-content: center;
     }
     .column{
-        width: 75%;
-        margin-bottom: 1em;
+        width: fit-content;
+        padding: 10%;
+        margin-bottom: 3em;
         font-size: smaller;
     }
     .column h3{
@@ -134,8 +178,7 @@ sup{
     #pricing-container{
         background-color: #212121;
         margin: 5%;
-        border: #6D9886 2px solid;    
-        border-radius: 5%;
+        border: #6D9886 2px solid; 
     }
     #pricing-container h1{
         margin-bottom: 0.5em;
