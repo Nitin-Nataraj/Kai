@@ -219,26 +219,15 @@ body {
     font-size: 0.9rem;
 }
 
-.btn {
-    width: 100%;
-    border: none;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    background-color: var(--primary);
-    padding: 1rem;
-    cursor: pointer;
-}
-
 @media screen and (min-width: 650px) {
     .wrapper {
-        grid-template-columns: repeat(2, minmax(250px, 300px));
+        grid-template-columns: repeat(1, minmax(250px, 300px));
     }
 }
 
 @media screen and (min-width: 960px) {
     .wrapper {
-        grid-template-columns: repeat(3, minmax(250px, 300px));
+        grid-template-columns: repeat(2, minmax(250px, 300px));
     }
 }
 
@@ -286,7 +275,7 @@ body {
     color: #212121;
     font-size: larger;
     margin-top: 3%;
-    padding-left: 5%;
+    padding-left: 5%; padding-right: 5%;
 }
 
 
@@ -298,6 +287,21 @@ body {
 }
 
 
+@media screen and (min-width:2000px){
+    #page-head{
+        font-size: 3.5em !important;
+    }
+    .cards h2 {
+        font-size: 2.5em;
+    }
+    
+    .news-pieces h2{
+        font-size: 2.5em;
+    }
+    .news-text{
+        font-size: 1.75em;
+    }
+}
 
 @media screen and (max-width:1000px){
     #gallery{
@@ -330,4 +334,34 @@ body {
         font-size: medium;
         padding: 5% 5% 10%;
     }
+}
+
+
+@media screen and (max-width:400px){
+    .news-container img{
+        transform: scale(0.75);
+    }
+    .news-container{
+        font-size: 0.85em;
+    }
+    .news-pieces{
+        margin-left: 5%; margin-right: 5%;
+    }
+    .news-text{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:300px){
+    .news-container img{
+        transform: scale(0.5);
+    }
+    .news-container{
+        font-size: 0.75em;
+        padding: 0 15%;
+    }
+    .news-pieces{
+        margin-left: 5%; margin-right: 5%;
+    }
+
 }

@@ -23,18 +23,17 @@ section.body{
     position: absolute;
     z-index: 2;
     text-align: left !important; 
-    font-family: 'Corinthia', cursive;   
-    top: 35%;
-    left: 5%;
+    font-family: 'Corinthia', cursive;
+    left: 5%;   
+    transform: translateY(2.25em);
     color: #212121;
     font-size: 2.25em;
 }
 
 .dest-button{
     position: absolute;
-    z-index: 2;
-    top: 60%;
-    left: 5%;
+    z-index: 2;left: 5%;   
+    transform: translateY(17.5em);
     background-color: #212121;
     color: #f6f6f6;
     padding: 1.25%;
@@ -76,13 +75,15 @@ a.dest-button:hover{
     width: 20%;
     padding: 2.5% 0 2.5%;
     margin: 1.5% auto;
-    border: #212121 2px solid;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem #000;
+    border-radius: 2%;
     color: #f6f6f6;
     background-color: #6D9886;
 }
 
 .feature-container img{
     height: 64px;
+    filter: opacity(0.5) drop-shadow(0 0 0 #212121);
 }
 
 a.features-button{
@@ -97,6 +98,34 @@ a.features-button:hover{
     color: #D9CAB3;
 }
 
+/**/
+.container{
+    text-align: justify;
+    margin: 5% 5%;
+    padding: 5%;
+    background-color: #6D9886;
+    color: #212121;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem #212121;
+    border-radius: 2.5%;
+    outline-offset: -0.3em;
+}
+
+.container a{
+    font-weight: bold;
+    color: #212121;
+}
+
+@media screen and (max-width:1000px){
+    .container p{
+        font-size: medium;
+    }
+    .container a{
+        font-size: medium;
+    }
+}
+
+
+/*Gallery*/
 
 #gallery{
     margin: 5% 10%;
@@ -255,11 +284,9 @@ input:checked + .slide-container .nav label { display: block; }
     } 
     .dest-p{
         font-size: 3.25em;
-        top: 37.5%
     }   
     .dest-button{
         font-size: 1.5em;
-        top: 67.5%;
     }
 }
 
@@ -276,7 +303,7 @@ input:checked + .slide-container .nav label { display: block; }
         display: none;
     }   
     .dest-button{
-        top: 35%;
+        transform: translateY(8.75em);
     }
     #features{
         flex-direction: column;
@@ -284,6 +311,7 @@ input:checked + .slide-container .nav label { display: block; }
     .feature-container{
         width: 50%;
         padding: 5% 0 5%;
+        margin-bottom: 5%;
     }
 }
 
@@ -292,6 +320,10 @@ input:checked + .slide-container .nav label { display: block; }
     .dest-head{
         font-size: x-large;
     }
+    .dest-button{
+        transform: translateY(5em);
+        font-size: small;
+    }
     .feature-container{
        font-size: small;
     }
@@ -299,4 +331,9 @@ input:checked + .slide-container .nav label { display: block; }
         margin: 10% auto;
         padding: 5%;
     }
+    #safety h2{
+        font-size: 1.25em;
+        text-align: left;
+    }
+    
 }

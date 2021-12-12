@@ -179,17 +179,6 @@ option{
   padding-right: 1.5em;
 }
 
-.footer{
-  color: #F6F6F6;
-  background-color: #212121;
-  height: 10em;
-  border-bottom: #F6F6F6 solid 0.1em; border-top: #6D9886 solid 0.2em;
-}
-
-.footer a:hover{
-  color: #D9CAB3;
-}
-
 #menuToggle
 {
 display: block;
@@ -422,6 +411,69 @@ hr{
 }  
 
 
+
+.footer{
+  color: #F6F6F6;
+  background-color: #212121;
+  height: fit-content;
+  border-bottom: #F6F6F6 solid 0.1em; border-top: #6D9886 solid 0.2em;
+}
+
+.footer a:hover{
+  color: #D9CAB3;
+}
+
+.footer p{
+  padding: 1% 0;
+  margin:0;
+}
+
+.footer img{
+  border-radius: 0%;
+  padding-left: 0;
+}
+
+.footer-contents{
+  display: flex;
+  flex-direction: row;
+  margin-left: auto; margin-right: auto;
+  padding: 2.5% 0 2% 0;
+}
+
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  align-self: center;
+}
+
+.footer-mail{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  align-self: center;
+}
+
+.footer-social{
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  align-items: center;
+  align-self: center;
+}
+
+.footer-social img{
+  height: 36px; width: 36px;
+  padding-bottom: 0.25em;
+}
+
+.copyright{
+    color: #D9CAB3;
+}
+
+
 /*Responsiveness*/
 
 @media screen and (min-width: 1000px) {
@@ -451,8 +503,6 @@ hr{
       color: #212121;
       padding-right: 0.75em;
     }
-
-
 }
 
 
@@ -490,6 +540,24 @@ hr{
 
   #nav-desktop{
     display: none;
+  }
+  
+  .footer-contents{
+    font-size: 0.8em;
+    flex-direction: column;
+  }
+
+  .footer-contact{
+    padding: 5% 0;  
+  }
+  
+  .footer-social{
+    padding: 5% 0;  
+  }
+
+  
+  .footer-mail{
+    padding: 5% 0;  
   }
 
 }

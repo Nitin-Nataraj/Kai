@@ -61,3 +61,24 @@ Photo by <a href="https://unsplash.com/@frame_media?utm_source=unsplash&utm_medi
   Photo by <a href="https://unsplash.com/@nicosmit99?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nico Smit</a> on <a href="https://unsplash.com/s/photos/charity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   Photo by <a href="https://unsplash.com/@jeshoots?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">JESHOOTS.COM</a> on <a href="https://unsplash.com/s/photos/hotel-cleaning?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   
+  Photo by <a href="https://unsplash.com/@ruvimnogaphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ruvim Noga</a> on <a href="https://unsplash.com/s/photos/abstract-banner?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@reisetopia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">reisetopia</a> on <a href="https://unsplash.com/s/photos/hotel-room?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+
+    Photo by <a href="https://unsplash.com/@jaywennington?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jay Wennington</a> on <a href="https://unsplash.com/s/photos/french-food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@mekalluakella?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kalyani Akella</a> on <a href="https://unsplash.com/s/photos/paneer-tikka?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@threepointswheretwolinesmeet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Pooja Chaudhary</a> on <a href="https://unsplash.com/s/photos/chinese-food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@haseebjkhan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Haseeb Jamil</a> on <a href="https://unsplash.com/s/photos/fast-food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  Photo by <a href="https://unsplash.com/@srphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shane Roten</a> on <a href="https://unsplash.com/s/photos/lounge?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@quinguyen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Q.U.I</a> on <a href="https://unsplash.com/s/photos/bar?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  Photo by <a href="https://unsplash.com/@alexhaney?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alex Haney</a> on <a href="https://unsplash.com/s/photos/gaming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  Footer:
+  <a href="https://icons8.com/icon/baRhMh2wmjbT/mail">Mail icon by Icons8</a>
+  <a href="https://icons8.com/icon/I24lanX6Nq71/phone">Phone icon by Icons8</a>
+  <a href="https://icons8.com/icon/32323/instagram">Instagram icon by Icons8</a>
+  <a href="https://icons8.com/icon/13963/twitter">Twitter icon by Icons8</a>
+  <a href="https://icons8.com/icon/5RTQxy0E0NUY/reddit">Reddit icon by Icons8</a>
+  
+  

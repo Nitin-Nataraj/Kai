@@ -1,34 +1,372 @@
+body{
+    overflow-x: hidden;
+}
+
 .body{
     color: #212121;
 }
 
 #page-title{
-    color: #212121;
-    font-size: x-large;
-    text-decoration: underline 0.15em #6D9886;
-    margin-bottom: 1.5em;
+    color: #f6f6f6;
+    text-align: left;
+    font-size: 2.75em;
+    text-decoration: underline 0.1em #6D9886;
+    margin: 0;
+    padding: 10% 0 8% 5%;
 }
 
-p{
+.info{
+    background-color: #f6f6f6;
     text-align: justify;
     font-size: large;
+    margin: 0;
+    padding: 5.5% 5% 5.5%;
+    border-bottom: #6D9886 0.1em solid;
+}
+
+.info p{
+    margin-bottom: 3.5%;
+}
+
+.info a{
+    color: #212121;
+    font-weight: bold;
+    margin-right: 2.5%;
+}
+
+.info a:hover{
+    color: #6D9886;
+}
+
+.title-image{
+    background-image: url("/images/exp/back-image.jpg");
+    width: 100vw;
+    color: #f6f6f6;
+}
+
+.covid-measures{
+    list-style-type: square;
+    padding-top: 3.5%;
+    padding-left: 2.5%;
+    font-weight: 600;
 }
 
 .container{
+    text-align: justify;
     margin: 5% 5%;
     padding: 5%;
-    background-color: #f6f6f6;
-    border: #f6f6f6 solid 2px;
+    background-color: #6D9886;
     box-shadow: 0rem 0.125rem 0.5rem 0rem #212121;
     outline-offset: -0.3em;
 }
 
+.comment{
+    color: #37474f;
+    font-size: medium;
+    margin-bottom: 5%;
+    padding: 0 25% 2.5%;
+    text-align: justify;
+}
+
+
+/*Cuisines*/
+
+
+.cards {
+    color: #212121;
+    margin: 0 auto;
+}
+
+.cuisine-container h2{
+    margin: 0 0 3.5%;
+}
+
+.cuisine-container{
+    padding-top: 7.5%;
+    margin: 0 0 7.5%;
+}
+
+:root {
+    --light-gray: #000000;
+    --gray: #37474f;
+    --primary: #6D9886;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--gray);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: minmax(250px, 300px);
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.card-container {
+    box-shadow: 0rem 0.125rem 0.5rem 0rem var(--light-gray);
+    background-color: #f6f6f6;
+    text-align: center;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-image {
+    width: 20rem;
+    height: 12rem;
+    transition: all 0.5s ease 0;
+}
+
+.profile-image:hover {
+    filter: grayscale(1);
+}
+
+.name {
+    padding-top: 10px;
+    font-size: 1.5rem;
+}
+
+.description {
+    margin: 1rem 2rem;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+hr{
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 650px) {
+    .wrapper {
+        grid-template-columns: repeat(1, minmax(250px, 300px));
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .wrapper {
+        grid-template-columns: repeat(2, minmax(250px, 300px));
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .wrapper {
+        grid-template-columns: repeat(4, minmax(250px, 300px));
+    }
+    .comment{
+        margin-left: auto; margin-right: auto;
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .wrapper {
+        grid-template-columns: repeat(4, minmax(250px, 300px));
+    }
+}
+
+@media screen and (min-width:2000px){
+    #amenities h2{
+        font-size: 3em;
+    }
+    .comment{
+        font-size: 1.5em;
+    }
+    .info p{
+        font-size: 1.75em;
+    }
+    
+    .info a{
+        font-size: 1.65em;
+    }
+    #page-title{
+        font-size: 4.5em;
+    }
+    .container {
+        margin: 5% 10%;
+        font-size: 1.5em;
+    }
+    .covid-measures{
+        padding-left: 1.25%;
+    }
+}
+
+
+/*Rooms*/
+
+.rooms-pieces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin: 2% 10%;
+    color: #212121;
+}
+
+.rooms-pieces h2{
+    text-align: center;    
+}
+
+.rooms-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 2.5% 0 2% 0;
+    background-color: #f6f6f6;
+    padding: 5%;
+    box-shadow: 0rem 0.125rem 0.5rem 0rem var(--light-gray);
+    border-radius: 3.5%;
+}
+
+.rooms-container h2{
+    text-align: justify;
+    padding-left: 5%;
+}
+
+.rooms-img {
+    border-radius: 50%;
+    height: 15em;
+    width: 20em;
+}
+
+.rooms-text {
+    color: #212121;
+    font-size: larger;
+    margin-top: 3%;
+    padding-left: 5%;
+}
+
+
+.image{
+    margin: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:300px){
+
+}
+
+@media screen and (max-width:320px){
+    #page-title{
+        font-size: 1.5em !important;
+    }
+    .info a{
+        font-size: 0.75em !important;
+    }
+    .info p{
+        font-size: 0.75em !important;
+    }
+    #safety h2{
+        font-size: 1em !important;
+        text-align: left;
+    }
+    
+    #safety p{
+        font-size: 0.75em !important;
+    }
+    .rooms-img{
+        transform: scale(0.5) !important;
+    }
+    .covid-measures{
+        font-size: 0.75em !important;
+    }
+}
+
+
+@media screen and (max-width:376px){
+    .rooms-pieces{
+        font-size: 0.75em !important;
+        margin: 0 5% !important;
+    }
+    hr{
+        margin: 10% auto;
+    }
+    .comment{
+        padding: 5% 15%;
+    }
+}
+
+
+@media screen and (max-width:500px){
+    .info a{
+        font-size: small;
+    }
+    #safety h2{
+        font-size: medium;
+        text-align: left;
+    }
+    
+    #safety p{
+        font-size: medium;
+    }
+    .rooms-img{
+        transform: scale(0.65) !important;
+    }
+}
+
+
+@media screen and (max-width:756px){
+    .rooms-text{
+        font-size: medium;
+        padding: 5% 5% 10%;
+    }
+    #page-title{
+        padding-top: 30%;
+        padding-bottom: 30%;
+    }
+}
+
+
+@media screen and (min-width:1344px){
+    #amenities p.description{
+        line-height: 1.5;
+    }
+}
 
 @media screen and (max-width:1000px){
     #page-title{
-        font-size: x-large;
+        font-size: 2.5em;
+        padding-top: 20%;
+        padding-bottom: 20%;
     }
     .container p{
         font-size: medium;
+    }
+    .rooms-pieces img{
+        transform: scale(0.8);
+    }
+    .image{
+        display: flex;
+        flex-direction: column;
+    }
+    .rooms-text{
+        margin-top: 5%;
+    }
+    .rooms-pieces{
+        margin: 10% 10%;
+    }
+    .rooms-pieces h2{
+        margin: 5% 0;
+    }
+    .cuisine-container h2 {
+        margin: 0 0 10%;
+    }
+    .info a{
+        font-size: medium;
+        margin-right: 2.5%;
     }
 }
