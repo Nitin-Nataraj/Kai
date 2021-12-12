@@ -39,7 +39,7 @@ body{
 }
 
 .title-image{
-    background-image: url("/images/exp/back-image.jpg");
+    background-image: url("images/exp/back-image.jpg");
     width: 100vw;
     color: #f6f6f6;
 }
